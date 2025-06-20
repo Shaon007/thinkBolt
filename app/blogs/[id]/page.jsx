@@ -35,10 +35,9 @@ const Page = ({ params }) => {
       </div>
     </div>
     <div className="mx-auto mt-[-100px] mb-10 max-w-[800px]">
-      <Image src={data.image} width={1280} height={720} alt="Blog Image" className="border-4 border-white" />
-      <h2 className="my-8 text-2xl font-semibold">Introduction</h2>
-      <p>{data.description}</p>
-      <p className="my-3">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, molestiae? sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae perferendis omnis id facere libero fugit nemo totam harum natus at laudantium possimus voluptate velit quae consectetur officiis ut, cum aperiam officia facilis? Asperiores, harum quasi? Pariatur, similique cum reiciendis, distinctio voluptas recusandae odio reprehenderit culpa assumenda neque ratione atque!</p>
+      <Image src={data.image} width={1280} height={720} alt="Blog Image" className="border-4 border-white object-cover w-full h-[500px]" />
+
+      <p className="mt-10">{data.description}</p>
     </div>
     <div className="my-24 text-center">
       <p className="my-4 ">Share this article on social media</p>
