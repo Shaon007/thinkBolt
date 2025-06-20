@@ -30,7 +30,7 @@ const Page = ({ params }) => {
       </div>
       <div className="text-center my-24 text-black">
         <h2 className="text-4xl font-mono font-semibold max-w-[700px] mx-auto">{data.title}</h2>
-        <Image src={data.author_img} alt="author Image" width={60} height={60} className="mt-6 mx-auto border border-white rounded-full " />
+        <Image src={data.authorImg} alt="author Image" width={60} height={60} className="mt-6 mx-auto border border-white rounded-full " />
         <p className="mt-1 pb-2 text-lg max-w-[740px] mx-auto">{data.author}</p>
       </div>
     </div>
