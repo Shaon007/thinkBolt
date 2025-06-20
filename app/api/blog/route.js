@@ -7,11 +7,12 @@ const LoadDB = async () => {
   await ConnectDB();
 };
 LoadDB();
-
+//api for get blog data
 export async function GET(request) {
-  return NextResponse.json({ message: "Blog API is working" });
+  const blogs = await BlogModel.find({});
+  return NextResponse.json({blogs});
 }
-
+//api for uploading blog
 export async function POST(request) {
   console.log("Receiving form data...");
   const formData = await request.formData();
@@ -21,7 +22,7 @@ export async function POST(request) {
   const buffer = Buffer.from(imageByteData);
   const path = `./public/${timestamp}_${image.name}`;
   await writeFile(path, buffer);
-  const imageUrl = `${timestamp}_${image.name}`;
+  const imageUrl = `/${timestamp}_${image.name}`;
   const blogData = {
     title: `${formData.get('title')}`,
     description: `${formData.get('description')}`,
