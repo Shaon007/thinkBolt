@@ -16,7 +16,7 @@ const BlogList = () => {
     fetchBlogs();
   },[])
   return (
-    <div className="text-black">
+    <div id="blog-section" className="text-black">
       <div className="flex justify-center gap-6 my-10">
         <button onClick={() => setMenu('All')} className={menu === 'All' ? "bg-black py-1 px-4 text-gray-200 rounded-sm" : ""}>All</button>
         <button onClick={() => setMenu('Technology')} className={menu === 'Technology' ? "bg-black py-1 px-4 text-gray-200 rounded-sm" : ""}>Technology</button>

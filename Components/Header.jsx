@@ -23,7 +23,7 @@ const Header = () => {
 
       <div className="text-center my-8">
         <h2 className="text-5xl md:text-3xl font-mono">Latest Blogs</h2>
-        <p className="mt-10 max-w-[740px] m-auto text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aspernatur minima aliquam. Nesciunt dicta dolorem veritatis aliquam nulla cumque porro.</p>
+        <p className="mt-10 max-w-[740px] m-auto text-base">Dive into a world of fresh perspectives, tech insights, lifestyle tips, and startup stories. At thinkBolt, we bring you well-crafted blogs that inform, inspire, and spark curiosity. Whether you're here to learn, explore, or simply enjoy a good read, there's something for everyone.</p>
         <form onSubmit={onSubmitHandler} className="flex justify-between text-black max-w-[500px] scale:100 mx-auto mt-10 border border-black" action="">
           <input onChange={(e)=>setEmail(e.target.value)} value={email} type="email" placeholder="Enter Email Address" className="pl-4 outline-none" />
           <button type="submit" className="border-l border-black py-4 px-4 active:bg-gray-400 active:text-white">Subscribe</button>
