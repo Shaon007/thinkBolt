@@ -1,6 +1,7 @@
 'use client';
 
 import BlogList from "@/Components/BlogList";
+import DeepSeekChat from "@/Components/DeepSeekChat";
 import Header from "@/Components/Header";
 import Image from "next/image";
 import { ToastContainer } from "react-toastify";
@@ -11,6 +12,7 @@ export default function Home() {
       <ToastContainer theme="dark"/>
       <Header/>
       <BlogList />
+      <DeepSeekChat/>
       {/* <Footer/> */}
     </main>
   );
