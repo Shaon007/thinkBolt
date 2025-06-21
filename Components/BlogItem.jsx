@@ -16,11 +16,13 @@ const BlogItem = ({ title, description, category, image, id }) => {
       </Link>
 
       <div className="flex flex-col flex-1 p-5">
-        <p className="mb-2 px-2 py-1 inline-block bg-black text-white text-sm rounded">{category}</p>
+        <p className="mb-2 px-2 py-1 inline-block bg-black text-white text-sm rounded text-center">{category}</p>
         <h4 className="mb-2 text-lg tracking-tight text-gray-800">{title}</h4>
-        <p className="text-md text-gray-600 mb-4">
-          {description.slice(0, 120)}{description.length > 120 ? "..." : ""}
-        </p>
+        <div className="flex-1 flex items-center ">
+          <p className="text-md text-gray-600 mb-4 ">
+            {description.slice(0, 100)}{description.length > 100 ? "..." : ""}
+          </p>
+        </div>
         <div className="mt-auto">
           <Link href={`/blogs/${id}`} className="inline-flex gap-2 items-center text-black font-semibold">
             Read More <FaArrowRight />
