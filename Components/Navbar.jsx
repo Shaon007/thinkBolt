@@ -34,18 +34,16 @@ const Navbar = () => {
     }
   };
 
-
-
   return (
     <div className="py-5 px-5 md:px-12 lg:px-28 text-black bg-white sticky top-0 z-50 shadow-md">
       <div className="flex justify-between items-center">
-        <Link href="/" className="font-mono md:text-xl">thinkBolt</Link>
+        <Link href="/" className="font-mono font-semibold md:text-xl">thinkBolt</Link>
 
         <div className="flex items-center gap-4 md:gap-6">
 
-          <Link href="/admin/blogList" className="font-mono text-sm hidden sm:block">Admin</Link>
-          <button className='cursor-pointer' onClick={generateBlog}>AI</button>
-          <Link href="/" className="font-mono text-sm hidden sm:block">About</Link>
+          <Link href="/admin/blogList" className="font-mono text-md hidden sm:block">Admin</Link>
+          <button className='font-mono text-md hidden sm:block cursor-pointer' onClick={generateBlog}>AI</button>
+          <Link href="/about" className="font-mono text-md  hidden sm:block">About</Link>
 
 
 
@@ -67,13 +65,13 @@ const Navbar = () => {
             <>
               <button
                 onClick={() => router.push('/login')}
-                className="py-1 px-4 bg-gray-700 text-white rounded-md font-mono hover:bg-gray-800 text-sm"
+                className="py-2 px-4 bg-gray-700 text-white rounded-md font-mono hover:bg-gray-800 text-sm"
               >
                 Login
               </button>
               <button
                 onClick={() => router.push('/register')}
-                className="py-1 px-4 border border-gray-800 text-gray-900 rounded-md font-mono hover:bg-gray-200 text-sm"
+                  className="py-2 px-4 bg-gray-700 text-white rounded-md font-mono hover:bg-gray-800 text-sm"
               >
                 Register
               </button>
