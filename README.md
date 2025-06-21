@@ -15,7 +15,7 @@ A modern blog platform built with **Next.js 14**, featuring categories like Tech
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Shaon007/nextjs-blog-client.git
+git clone https://github.com/Shaon007/thinkBolt.git
 cd nextjs-blog-client
 
 # 2. Install dependencies
