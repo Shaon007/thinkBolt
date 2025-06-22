@@ -155,7 +155,7 @@ export default function DeepSeekChat() {
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="bg-gray-700 text-white px-6 py-2 rounded-r-lg hover:bg-gray-700 disabled:opacity-50 transition-colors"
+            className="bg-gray-700 hover:bg-gray-900 text-white px-6 py-2 rounded-r-lg  disabled:opacity-50 transition-colors"
           >
             {isLoading ? 'Sending...' : 'Send'}
           </button>

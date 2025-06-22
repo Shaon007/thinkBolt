@@ -24,7 +24,7 @@ const BlogItem = ({ title, description, category, image, id }) => {
           </p>
         </div>
         <div className="mt-auto">
-          <Link href={`/blogs/${id}`} className="inline-flex gap-2 items-center text-black font-semibold">
+          <Link href={`/blogs/${id}`} className="inline-flex gap-2 items-center text-black font-semibold hover:border-b-gray-600 hover:border-b-2">
             Read More <FaArrowRight />
           </Link>
         </div>

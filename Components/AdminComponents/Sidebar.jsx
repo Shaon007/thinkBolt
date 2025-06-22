@@ -10,13 +10,13 @@ const Sidebar = () => {
       </div> */}
       <div className="w-28 sm:w-60 h-[100vh] relative py-12 border border-black">
 
-        <Link href='/admin/addProduct' className="mx-2 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-md text-black">
+        <Link href='/admin/addProduct' className="mx-2 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-md text-black hover:scale-105">
           <Image src={assets.add_icon} width={28} alt=""/><p>Add Blogs</p>
         </Link>
-        <Link href='/admin/blogList' className="mx-2 mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-md text-black">
+        <Link href='/admin/blogList' className="mx-2 mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-md text-black hover:scale-105">
           <Image src={assets.blog_icon} width={28} alt="ast"/><p> Blog Lists</p>
         </Link>
-        <Link href='/admin/subscriptions' className="mx-2 mt-5  flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-md text-black">
+        <Link href='/admin/subscriptions' className="mx-2 mt-5  flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-md text-black hover:scale-105">
           <Image src={assets.email_icon} width={28} alt=""/><p className="truncate">Subscriptions</p>
         </Link>
 
