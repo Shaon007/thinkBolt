@@ -87,7 +87,7 @@ export default function DeepSeekChat() {
   };
 
   return (
-    <div id='deepseek' className='flex gap-10 justify-around items-center p-8 min-h-[600px] bg-gradient-to-r from-indigo-50 via-white to-indigo-50'>
+    <div id='deepseek' className='flex flex-col md:flex-row gap-10 justify-around items-center p-8 min-h-[600px] bg-gradient-to-r from-indigo-50 via-white to-indigo-50'>
 
       {/* Left Panel: Text Info */}
       <div className="max-w-sm flex flex-col justify-center space-y-6 px-4">

@@ -75,7 +75,7 @@ export default function AboutPage() {
           className="text-sm text-gray-500 mt-10"
           variants={itemVariant}
         >
-           Built  by the thinkBolt team · Est. 2025
+           Built  by Nazir
         </motion.p>
       </motion.div>
     </main>

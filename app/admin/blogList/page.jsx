@@ -26,8 +26,8 @@ const page = () => {
 
 
   return (
-    <div className="flex-1 pt-5 px-5 sm:pt-12 sm:pl-16">
-      <h2>All Blogs</h2>
+    <div className="flex-1 pt-5 md:px-5 sm:pt-12 sm:pl-16  w-[312px] md:w-full">
+      <h2 className="pl-3">All Blogs</h2>
       <div className="relative h-[80vh] max-w-[850px] overflow-x-auto mt-4 border-gray-400 scrollbar-hide">
         <table className="w-full text-sm text-gray-500 ">
           <thead className="text-sm text-gray-700 text-left uppercase bg-gray-50">

@@ -17,7 +17,7 @@ const Sidebar = () => {
           <Image src={assets.blog_icon} width={28} alt="ast"/><p> Blog Lists</p>
         </Link>
         <Link href='/admin/subscriptions' className="mx-2 mt-5  flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-md text-black">
-          <Image src={assets.email_icon} width={28} alt=""/><p>Subscriptions</p>
+          <Image src={assets.email_icon} width={28} alt=""/><p className="truncate">Subscriptions</p>
         </Link>
 
       </div>
