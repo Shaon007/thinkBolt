@@ -13,7 +13,6 @@ const Navbar = () => {
   const [user, setUser] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef();
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -38,11 +37,15 @@ const Navbar = () => {
   };
 
   const generateBlog = () => {
-    const section = document.getElementById('deepseek');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    if (window.location.pathname === '/') {
+      const section = document.getElementById('deepseek');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.warn('Element with ID "deepseek" not found');
+      }
     } else {
-      console.warn('Element with ID "deepseek" not found');
+      router.push('/#deepseek');
     }
   };
 
