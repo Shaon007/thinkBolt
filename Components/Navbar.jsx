@@ -56,9 +56,9 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden sm:flex items-center gap-4 md:gap-6">
-          <Link href="/admin/blogList" className="font-mono text-md">Admin</Link>
-          <button className="font-mono text-md cursor-pointer" onClick={generateBlog}>AI</button>
-          <Link href="/about" className="font-mono text-md">About</Link>
+          <Link href="/admin/blogList" className="font-mono text-md hover:border-b-2 ">Admin</Link>
+          <button className="font-mono text-md cursor-pointer hover:border-b-2  " onClick={generateBlog}>AI Chatbot</button>
+          <Link href="/about" className="font-mono text-md hover:border-b-2 ">About</Link>
 
           {user ? (
             <>
